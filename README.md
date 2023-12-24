@@ -115,6 +115,8 @@ The data structure of _Eta_ is as follows:
 ## Contribute
 Project owner [chunlaw](https://github.com/chunlaw) is the initiator of the whole project. Everyone is welcome to contribute. 
 
+Modified by [skpracta](https://github.com/skpracta) to include https://hkbus-data.skpracta.info as a data source and intended for use by https://hkbus.skpracta.info as a fork of HKBUS.
+
 ## License
 
 GPL-3.0 license

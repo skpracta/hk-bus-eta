@@ -1,7 +1,7 @@
 {
-  "name": "hk-bus-eta",
+  "name": "hk-bus-eta-skpracta",
   "version": "3.2.1",
-  "description": "Query the ETA (Estimated Time of Arrival) of HK Bus/Minibus/MTR/Lightrail",
+  "description": "Query the ETA (Estimated Time of Arrival) of HK Bus/Minibus/MTR/Lightrail (skpracta flavored)",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "files": [
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hkbus/hk-bus-eta.git"
+    "url": "git+https://github.com/skpracta/hk-bus-eta.git"
   },
   "keywords": [
     "eta",
@@ -35,10 +35,10 @@
     "minibus",
     "data.gov.hk"
   ],
-  "author": "chunlaw",
+  "author": "skpracta",
   "license": "GPL-3.0-only",
   "bugs": {
-    "url": "https://github.com/hkbus/hk-bus-eta/issues"
+    "url": "https://github.com/skpracta/hk-bus-eta/issues"
   },
   "homepage": "https://hk-bus-eta.hkbus.app/",
   "devDependencies": {

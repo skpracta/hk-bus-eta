@@ -110,19 +110,25 @@ export async function fetchEtas({
 }
 
 export async function fetchEtaDb(): Promise<EtaDb> {
-  return fetch("https://data.hkbus.app/routeFareList.min.json", {cache: "no-store"})
-    .then((r) => r.json())
-    .catch(() => fetch("https://hkbus.github.io/hk-bus-crawling/routeFareList.min.json", {cache: "no-store"})
-      .then(r => r.json())
-    );
+  var fileName = "routeFareList.min.json";
+  return fetch("https://hkbus-data.skpracta.info/" + fileName, {cache: "no-store"})
+  .then((r) => r.json())
+  .catch(()=> fetch("https://data.hkbus.app/" + fileName, {cache: "no-store"})
+  .then((r) => r.json())
+  .catch(() => fetch("https://hkbus.github.io/hk-bus-crawling/" + fileName, {cache: "no-store"})
+  .then((r) => r.json())
+  ));
 }
 
 export async function fetchEtaDbMd5(): Promise<string> {
-  return fetch("https://data.hkbus.app/routeFareList.md5", {cache: "no-store"})
-    .then((r) => r.text())
-    .catch(() => fetch("https://hkbus.github.io/hk-bus-crawling/routeFareList.md5", {cache: "no-store"})
-      .then(r => r.text())
-    );
+  var fileName = "routeFareList.md5";
+  return fetch("https://hkbus-data.skpracta.info/" + fileName, {cache: "no-store"})
+  .then((r) => r.text())
+  .catch(()=> fetch("https://data.hkbus.app/" + fileName, {cache: "no-store"})
+  .then((r) => r.text())
+  .catch(() => fetch("https://hkbus.github.io/hk-bus-crawling/" + fileName, {cache: "no-store"})
+  .then((r) => r.text())
+  ));
 }
 
 export type * from "./type";
